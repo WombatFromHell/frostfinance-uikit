@@ -8,6 +8,7 @@ export * from "./components/Card";
 export * from "./components/Checkbox";
 export * from "./components/Dropdown";
 export * from "./components/FallingBunnies";
+export * from "./components/NotificationDot";
 export * from "./components/Heading";
 export * from "./components/Image";
 export * from "./components/Input";
