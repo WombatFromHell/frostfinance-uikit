@@ -38,6 +38,7 @@ export { default as OpenNewIcon } from "./Icons/OpenNew";
 export { default as PancakesIcon } from "./Icons/Pancakes";
 export { default as PancakeRoundIcon } from "./Icons/PancakeRound";
 export { default as PrizeIcon } from "./Icons/Prize";
+export { default as RefreshIcon } from "./Icons/Refresh";
 export { default as RemoveIcon } from "./Icons/Remove";
 export { default as VerifiedIcon } from "./Icons/Verified";
 export { default as ProgressBunny } from "./Icons/ProgressBunny";
