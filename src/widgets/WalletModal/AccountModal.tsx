@@ -11,9 +11,11 @@ interface Props {
   account: string;
   logout: () => void;
   onDismiss?: () => void;
+  explorerUrl: string;
+  explorerText: string;
 }
 
-const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null }) => (
+const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null, explorerUrl, explorerText }) => (
   <Modal title="Your wallet" onDismiss={onDismiss}>
     <Text
       fontSize="20px"
@@ -23,8 +25,8 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
       {account}
     </Text>
     <Flex mb="32px">
-      <LinkExternal small href={`https://ftmscan.com/address/${account}`} mr="16px">
-        View on FTMScan
+      <LinkExternal small href={`${explorerUrl}${account}`} mr="16px">
+        ${explorerText}
       </LinkExternal>
       <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
     </Flex>

@@ -5,6 +5,8 @@ interface Props {
     login: Login;
     logout: () => void;
     isDark: boolean;
+    explorerUrl: string;
+    explorerText: string;
 }
 declare const _default: React.NamedExoticComponent<Props>;
 export default _default;

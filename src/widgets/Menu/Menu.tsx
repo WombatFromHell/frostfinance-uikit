@@ -73,6 +73,8 @@ const Menu: React.FC<NavProps> = ({
   cakePriceUsd,
   links,
   profile,
+  explorerText,
+  explorerUrl,
   children,
 }) => {
   const { isXl } = useMatchBreakpoints();
@@ -122,7 +124,20 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
-        <Flex>{showMenu ? <UserBlock account={account} login={login} logout={logout} isDark={isDark} /> : <></>}</Flex>
+        <Flex>
+          {showMenu ? (
+            <UserBlock
+              account={account}
+              login={login}
+              logout={logout}
+              isDark={isDark}
+              explorerUrl={explorerUrl}
+              explorerText={explorerText}
+            />
+          ) : (
+            <></>
+          )}
+        </Flex>
       </StyledNav>
       <BodyWrapper>
         <Panel
