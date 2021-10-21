@@ -1,5 +1,5 @@
 {
-  "name": "@pancakeswap-libs/uikit",
+  "name": "@frostfinance-libs/uikit",
   "version": "0.0.1",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/SpiritSwap/uikit",
+  "repository": "https://github.com/WombatFromHell/frostfinance-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
