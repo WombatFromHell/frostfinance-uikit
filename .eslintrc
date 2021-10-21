@@ -1,8 +1,11 @@
 {
-  "extends": "@pancakeswap-libs/eslint-config-pancake",
+  "extends": ["@pancakeswap-libs/eslint-config-pancake"],
   "settings": {
     "import/resolver": {
-      "typescript": {} 
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
     }
   },
   "rules": {
