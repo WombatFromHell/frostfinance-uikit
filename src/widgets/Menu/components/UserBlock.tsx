@@ -16,7 +16,7 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
   const accountEllipsis = account ? `${account.substring(0, 4)}...${account.substring(account.length - 4)}` : null;
 
   const OwnButton = styled(Button)`
-    border-radius: 0.5rem;
+    border-radius: 6px;
     color: ${({ theme }) => (theme.isDark ? `#6DD784` : `#0d0e21`)};
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 3px transparent;

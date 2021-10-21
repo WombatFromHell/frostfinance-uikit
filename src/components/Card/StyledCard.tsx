@@ -29,7 +29,7 @@ const StyledCard = styled.div<StyledCardProps>`
   background-color: ${({ theme }) => theme.card.background};
   border: ${({ theme }) => theme.card.boxShadow};
   /* border-radius: 32px; */
-  border-radius: 0.5rem;
+  border-radius: 6px;
   box-shadow: ${getBoxShadow};
   color: ${({ theme, isDisabled }) => theme.colors[isDisabled ? "textDisabled" : "text"]};
   overflow: hidden;

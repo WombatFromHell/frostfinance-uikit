@@ -59,7 +59,7 @@ const StyledButton = styled.button<BaseButtonProps>`
   outline: 0;
   transition: background-color 0.2s;
 
-  border-radius: 0.5rem;
+  border-radius: 6px;
   //color: ${({ theme }) => (theme.isDark ? `#fff` : `#0ad9e4`)};
 
   border: solid 3px transparent;

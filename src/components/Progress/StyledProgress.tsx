@@ -22,7 +22,7 @@ Bar.defaultProps = {
 const StyledProgress = styled.div`
   position: relative;
   background-color: ${({ theme }) => theme.colors.input};
-  border-radius: 0.5rem;
+  border-radius: 6px;
   box-shadow: ${({ theme }) => theme.shadows.inset};
   height: 16px;
   overflow: hidden;
