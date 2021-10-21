@@ -22,12 +22,12 @@ const style = {
 };
 
 const Heading = styled(Text).attrs({ bold: true })<HeadingProps>`
-  font-size: ${({ size }) => style[size || sizes.MD].fontSize};
+  font-size: ${({ scale }) => style[scale || sizes.MD].fontSize};
   font-weight: 600;
   line-height: 1.1;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    font-size: ${({ size }) => style[size || sizes.MD].fontSizeLg};
+    font-size: ${({ scale }) => style[scale || sizes.MD].fontSizeLg};
   }
 `;
 

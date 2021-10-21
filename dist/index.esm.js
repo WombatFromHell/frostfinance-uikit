@@ -1097,14 +1097,14 @@ var style = (_a$1 = {},
     },
     _a$1);
 var Heading = styled(Text).attrs({ bold: true })(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"], ["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"])), function (_a) {
-    var size = _a.size;
-    return style[size || sizes.MD].fontSize;
+    var scale = _a.scale;
+    return style[scale || sizes.MD].fontSize;
 }, function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.lg;
 }, function (_a) {
-    var size = _a.size;
-    return style[size || sizes.MD].fontSizeLg;
+    var scale = _a.scale;
+    return style[scale || sizes.MD].fontSizeLg;
 });
 Heading.defaultProps = {
     as: tags.H2,
