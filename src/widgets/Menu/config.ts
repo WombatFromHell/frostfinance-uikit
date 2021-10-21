@@ -5,21 +5,25 @@ export const links = [
     href: "/",
   },
   {
-    label: "LGE",
-    icon: "PoolIcon",
-    href: "/lge",
-  },
-  {
     label: "Trade",
     icon: "TradeIcon",
     items: [
       {
-        label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
+        label: "Buy TUNDRA",
+        href: "https://app.pangolin.exchange/#/swap?outputCurrency=0x21c5402C3B7d40C89Cc472C9dF5dD7E51BbAb1b1",
       },
       {
-        label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
+        label: "TUNDRA liquidity",
+        href: "https://app.pangolin.exchange/#/add/AVAX/0x21c5402c3b7d40c89cc472c9df5dd7e51bbab1b1",
+      },
+      {
+        label: "Buy EXP",
+        href: "https://app.pangolin.exchange/#/swap?outputCurrency=0xf57b80A574297892B64E9a6c997662889b04a73a",
+      },
+      {
+        label: "EXP liquidity",
+        href:
+          "https://app.pangolin.exchange/#/add/0xc7198437980c041c805a1edcba50c1ce5db95118/0xf57b80a574297892b64e9a6c997662889b04a73a",
       },
     ],
   },
@@ -31,87 +35,26 @@ export const links = [
   {
     label: "Pools",
     icon: "PoolIcon",
-    href: "/syrup",
+    href: "/exppools",
   },
   {
-    label: "Boosted Farms",
-    icon: "GaugeIcon",
-    href: "/boostedfarms",
-  },
-  {
-    label: "inSpirit",
-    icon: "inSpiritIcon",
-    href: "http://spiritswap-inspirit-staging.s3-website.us-east-2.amazonaws.com/", // to change in production
-  },
-  {
-    label: "Certik Audit (In-Progress)",
-    icon: "ShieldIcon",
-    href: "https://twitter.com/Spirit_Swap/status/1367218225310818308",
-    target: "_blank",
-  },
-  {
-    label: "Bush",
-    icon: "BushIcon",
-    href: "/bush",
-  },
-  {
-    label: "Lottery",
+    label: "Raffles",
     icon: "TicketIcon",
-    href: "/lottery",
-  },
-  {
-    label: "NFT",
-    icon: "NftIcon",
-    href: "/nft",
-  },
-  {
-    label: "Profile & Teams",
-    icon: "GroupsIcon",
-    items: [
-      {
-        label: "Leaderboard",
-        href: "/",
-      },
-      {
-        label: "YourProfile",
-        href: "/",
-      },
-    ],
-    calloutClass: "rainbow",
+    href: "/raffles",
   },
   {
     label: "Info",
     icon: "InfoIcon",
     items: [
       {
-        label: "Overview",
-        href: "https://pancakeswap.info",
+        label: "Chart TUNDRA",
+        href:
+          "https://chartex.pro/?symbol=AVAX_PANGOLIN%3ATUNDRA.0x0a081F54d81095D9F8093b5F394Ec9b0EF058876&interval=5&theme=dark",
       },
       {
-        label: "Tokens",
-        href: "https://pancakeswap.info/tokens",
-      },
-      {
-        label: "Pairs",
-        href: "https://pancakeswap.info/pairs",
-      },
-      {
-        label: "Accounts",
-        href: "https://pancakeswap.info/accounts",
-      },
-    ],
-  },
-  {
-    label: "IFO",
-    icon: "IfoIcon",
-    items: [
-      {
-        label: "Next",
-        href: "/ifo",
-      },
-      {
-        label: "History",
-        href: "/ifo/history",
+        label: "Chart EXP",
+        href:
+          "https://chartex.pro/?symbol=AVAX_PANGOLIN%3AEXP%2FUSDTe.0x5a615108E682D71E9726c7c1567f7DF968F54BA0&interval=60&theme=dark",
       },
     ],
   },
@@ -119,22 +62,9 @@ export const links = [
     label: "More",
     icon: "MoreIcon",
     items: [
-      // {
-      //   label: "Voting",
-      //   href: "https://voting.pancakeswap.finance",
-      // },
-      {
-        label: "Github",
-        href: "https://github.com/Layer3Org/SpiritSwap/",
-        target: "_blank",
-      },
       {
         label: "Docs",
-        href: "https://SpiritSwap.gitbook.io/spiritswap/",
-      },
-      {
-        label: "Blog",
-        href: "https://spiritswapdex.medium.com/",
+        href: "https://frostfinance.gitbook.io/frost-finance/",
       },
     ],
   },
@@ -144,27 +74,12 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/Spirit_Swap",
-  },
-  {
-    label: "Discord",
-    icon: "DiscordIcon",
-    href: "https://discord.gg/8FGd4nFQdT",
+    href: "https://mobile.twitter.com/frost_fi/",
   },
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/spirit_swap",
-  },
-  {
-    label: "GitHub",
-    icon: "GitHubIcon",
-    href: "https://github.com/Layer3Org/spiritswap-core/",
-  },
-  {
-    label: "Medium",
-    icon: "MediumIcon",
-    href: "https://spiritswap.medium.com/",
+    href: "https://t.me/frostfinance",
   },
 ];
 

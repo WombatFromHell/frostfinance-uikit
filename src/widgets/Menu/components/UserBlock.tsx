@@ -14,7 +14,13 @@ interface Props {
 }
 
 const UserBlock: React.FC<Props> = ({ account, login, logout, explorerUrl, explorerText }) => {
-  const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(login, logout, explorerUrl, explorerText, account);
+  const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(
+    login,
+    logout,
+    explorerUrl,
+    explorerText,
+    account
+  );
   const accountEllipsis = account ? `${account.substring(0, 4)}...${account.substring(account.length - 4)}` : null;
 
   const OwnButton = styled(Button)`
