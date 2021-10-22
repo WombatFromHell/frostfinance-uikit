@@ -2122,13 +2122,13 @@ var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { sec
     } });
 var frostfiColors = __assign(__assign(__assign({}, baseColors), brandColors), { 
     // darker text
-    secondary: '#40c2e9', 
+    secondary: "#40c2e9", 
     // dropdown/toggle back color
-    tertiary: '#493F5A', background: '#100C18', backgroundDisabled: '#3c3742', contrast: '#c9c0f5', invertedContrast: '#191326', farmBackground: '#100C18', toggleBackground: '#100C18', input: '#483f5a', inputSecondary: '#66578D', primaryDark: '#A28BD4', text: '#EAE2FC', textDisabled: '#666171', 
+    tertiary: "#493F5A", background: "#100C18", backgroundDisabled: "#3c3742", contrast: "#c9c0f5", invertedContrast: "#191326", farmBackground: "#100C18", toggleBackground: "#100C18", input: "#483f5a", inputSecondary: "#66578D", primaryDark: "#A28BD4", text: "#EAE2FC", textDisabled: "#666171", 
     // button text
-    textSubtle: '#A28BD4', 
+    textSubtle: "#A28BD4", 
     // badge border
-    borderColor: '#859BBA', card: '#27262c', nav: '#100C18', 
+    borderColor: "#859BBA", card: "#27262c", nav: "#100C18", 
     // cardBorder: '',
     // dropdown: '',
     // dropdownDeep: '',
@@ -2136,7 +2136,7 @@ var frostfiColors = __assign(__assign(__assign({}, baseColors), brandColors), {
     // button color
     // button: '#859BBA',
     gradients: {
-        bubblegum: 'linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)',
+        bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
 
 var light = {
@@ -2209,6 +2209,8 @@ var dark$6 = {
     text: lightColors.text,
     boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.2), 0px 4px 12px -8px rgba(14, 14, 44, 0.1)",
 };
+
+var frostfiTheme = __assign(__assign({}, base), { isDark: true, alert: dark, colors: frostfiColors, card: dark$1, toggle: dark$3, nav: dark$4, modal: dark$5, radio: dark$2, tooltip: dark$6 });
 
 var darkTheme = __assign(__assign({}, base), { isDark: true, alert: dark, colors: darkColors, card: dark$1, toggle: dark$3, nav: dark$4, modal: dark$5, radio: dark$2, tooltip: dark$6 });
 
@@ -3683,6 +3685,7 @@ exports.byTextDescending = byTextDescending;
 exports.connectorLocalStorageKey = connectorLocalStorageKey;
 exports.dark = darkTheme;
 exports.darkColors = darkColors;
+exports.frostfi = frostfiTheme;
 exports.frostfiColors = frostfiColors;
 exports.light = lightTheme;
 exports.lightColors = lightColors;

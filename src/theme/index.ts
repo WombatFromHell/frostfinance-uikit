@@ -26,6 +26,7 @@ export interface PancakeTheme {
   zIndices: ZIndices;
 }
 
+export { default as frostfi } from "./frostfi";
 export { default as dark } from "./dark";
 export { default as light } from "./light";
 
