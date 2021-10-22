@@ -10,6 +10,7 @@ import { Login } from "./types";
 interface Props {
   login: Login;
   onDismiss?: () => void;
+  connectUrl?: string;
 }
 
 const HelpLink = styled(Link)`
@@ -19,7 +20,11 @@ const HelpLink = styled(Link)`
   margin-top: 24px;
 `;
 
-const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null }) => (
+const ConnectModal: React.FC<Props> = ({
+  login,
+  onDismiss = () => null,
+  connectUrl = "https://pangolin.exchange/tutorials/getting-started/#set-up-metamask",
+}) => (
   <Modal title="Connect to a wallet" onDismiss={onDismiss}>
     {config.map((entry, index) => (
       <WalletCard
@@ -30,7 +35,7 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null }) => (
         mb={index < config.length - 1 ? "8px" : "0"}
       />
     ))}
-    <HelpLink href="https://app.gitbook.com/@layer3/s/spirit-swap/howto/connect-metamask" external>
+    <HelpLink href={connectUrl} external>
       <HelpIcon color="primary" mr="6px" />
       Learn how to connect
     </HelpLink>

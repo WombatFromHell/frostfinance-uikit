@@ -3299,10 +3299,10 @@ var WalletCard = function (_a) {
 
 var HelpLink = styled(Link)(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"])));
 var ConnectModal = function (_a) {
-    var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
+    var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b, _c = _a.connectUrl, connectUrl = _c === void 0 ? "https://pangolin.exchange/tutorials/getting-started/#set-up-metamask" : _c;
     return (React.createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss },
         connectors.map(function (entry, index) { return (React.createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); }),
-        React.createElement(HelpLink, { href: "https://app.gitbook.com/@layer3/s/spirit-swap/howto/connect-metamask", external: true },
+        React.createElement(HelpLink, { href: connectUrl, external: true },
             React.createElement(Icon$q, { color: "primary", mr: "6px" }),
             "Learn how to connect")));
 };
@@ -3357,8 +3357,8 @@ var AccountModal = function (_a) {
                 } }, "Logout"))));
 };
 
-var useWalletModal = function (login, logout, explorerUrl, explorerText, account) {
-    var onPresentConnectModal = useModal(React.createElement(ConnectModal, { login: login }))[0];
+var useWalletModal = function (login, logout, explorerUrl, explorerText, account, connectUrl) {
+    var onPresentConnectModal = useModal(React.createElement(ConnectModal, { login: login, connectUrl: connectUrl }))[0];
     var onPresentAccountModal = useModal(React.createElement(AccountModal, { account: account || "", logout: logout, explorerUrl: explorerUrl, explorerText: explorerText }))[0];
     return { onPresentConnectModal: onPresentConnectModal, onPresentAccountModal: onPresentAccountModal };
 };
