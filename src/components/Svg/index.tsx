@@ -26,6 +26,7 @@ export { default as FarmIcon } from "./Icons/Farm";
 export { default as HelpIcon } from "./Icons/Help";
 export { default as HomeIcon } from "./Icons/Home";
 export { default as InfoIcon } from "./Icons/Info";
+export { default as LanguageIcon } from "./Icons/Language";
 export { default as ListViewIcon } from "./Icons/ListView";
 export { default as LogoIcon } from "./Icons/Logo";
 export { default as LogoRoundIcon } from "./Icons/LogoRound";

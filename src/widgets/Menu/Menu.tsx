@@ -67,11 +67,15 @@ const Menu: React.FC<NavProps> = ({
   logout,
   isDark,
   toggleTheme,
+  langs,
+  setLang,
+  currentLang,
+  cakePriceUsd,
   links,
   profile,
-  cakePriceUsd,
-  explorerText,
   explorerUrl,
+  explorerText,
+  connectUrl,
   children,
 }) => {
   const { isXl } = useMatchBreakpoints();
@@ -130,6 +134,7 @@ const Menu: React.FC<NavProps> = ({
               isDark={isDark}
               explorerUrl={explorerUrl}
               explorerText={explorerText}
+              connectUrl={connectUrl}
             />
           ) : (
             <></>
@@ -143,6 +148,9 @@ const Menu: React.FC<NavProps> = ({
           showMenu={showMenu}
           isDark={isDark}
           toggleTheme={toggleTheme}
+          langs={langs}
+          setLang={setLang}
+          currentLang={currentLang}
           cakePriceUsd={cakePriceUsd}
           pushNav={setIsPushed}
           links={links}

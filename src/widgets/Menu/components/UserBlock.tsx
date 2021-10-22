@@ -11,15 +11,17 @@ interface Props {
   isDark: boolean;
   explorerUrl: string;
   explorerText: string;
+  connectUrl?: string;
 }
 
-const UserBlock: React.FC<Props> = ({ account, login, logout, explorerUrl, explorerText }) => {
+const UserBlock: React.FC<Props> = ({ account, login, logout, explorerUrl, explorerText, connectUrl }) => {
   const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(
     login,
     logout,
     explorerUrl,
     explorerText,
-    account
+    account,
+    connectUrl
   );
   const accountEllipsis = account ? `${account.substring(0, 4)}...${account.substring(account.length - 4)}` : null;
 
