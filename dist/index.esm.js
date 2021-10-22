@@ -2107,6 +2107,24 @@ var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { se
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#52D784", background: "#1F2B46", backgroundDisabled: "#424037", contrast: "#FFFFFF", invertedContrast: "#0D0F22", input: "#483F5A", inputSecondary: "#8d8857", primaryDark: "#8f8104", tertiary: "#28444A", text: "#fcfae2", farmBackground: "#452A7A", toggleBackground: "#0D0F22", textDisabled: "#717161", textSubtle: "#6DD784", borderColor: "#61634b", card: "#0D0F22", nav: "#0D0F22", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
+var frostfiColors = __assign(__assign(__assign({}, baseColors), brandColors), { 
+    // darker text
+    secondary: '#40c2e9', 
+    // dropdown/toggle back color
+    tertiary: '#493F5A', background: '#100C18', backgroundDisabled: '#3c3742', contrast: '#c9c0f5', invertedContrast: '#191326', farmBackground: '#100C18', toggleBackground: '#100C18', input: '#483f5a', inputSecondary: '#66578D', primaryDark: '#A28BD4', text: '#EAE2FC', textDisabled: '#666171', 
+    // button text
+    textSubtle: '#A28BD4', 
+    // badge border
+    borderColor: '#859BBA', card: '#27262c', nav: '#100C18', 
+    // cardBorder: '',
+    // dropdown: '',
+    // dropdownDeep: '',
+    // alwaysWhite: '',
+    // button color
+    // button: '#859BBA',
+    gradients: {
+        bubblegum: 'linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)',
+    } });
 
 var light = {
     background: lightColors.card,
@@ -3552,4 +3570,4 @@ var ResetCSS = createGlobalStyle(templateObject_1$S || (templateObject_1$S = __m
 });
 var templateObject_1$S;
 
-export { Icon$4 as AddIcon, Alert, Icon$5 as ArrowBackIcon, Icon$6 as ArrowDownIcon, Icon$7 as ArrowDropDownIcon, Icon$8 as ArrowDropUpIcon, Icon$9 as ArrowForwardIcon, Icon$a as AutoRenewIcon, BackgroundImage, GridLayout as BaseLayout, Icon$b as BinanceIcon, Icon$2 as BlockIcon, Box, Breadcrumbs, Icon$c as BunnyPlaceholderIcon, Button, ButtonMenu, ButtonMenuItem, Icon$e as CalculateIcon, Card, CardBody, CardFooter, CardHeader, CardRibbon, Icon$d as CardViewIcon, GridLayout$1 as CardsLayout, Icon$f as ChartIcon, Checkbox, Icon as CheckmarkCircleIcon, Icon$g as CheckmarkIcon, Icon$h as ChevronDownIcon, Icon$i as ChevronLeftIcon, Icon$j as ChevronRightIcon, Icon$k as ChevronUpIcon, Icon$l as CloseIcon, Icon$m as CogIcon, Icon$n as CommunityIcon, ConnectorNames, Icon$o as CopyIcon, Dropdown, Icon$1 as ErrorIcon, FallingBunnies, Icon$p as FarmIcon, Flex, Heading, Icon$q as HelpIcon, Icon$r as HomeIcon, IconButton, Image, Icon$3 as InfoIcon, Input, Link, LinkExternal, Icon$s as ListViewIcon, Icon$t as LogoIcon, Icon$u as LogoRoundIcon, Menu, Icon$v as MetamaskIcon, Icon$w as MinusIcon, Modal, ModalProvider, Icon$x as MoreIcon, Icon$y as NftIcon, Icon$z as NoProfileAvatarIcon, NotificationDot, Icon$A as OpenNewIcon, Icon$C as PancakeRoundIcon, Icon$B as PancakesIcon, Icon$D as PrizeIcon, Progress, Icon$H as ProgressBunny, Radio, Icon$E as RefreshIcon, Icon$F as RemoveIcon, ResetCSS, Icon$O as SearchIcon, Skeleton, Spinner, Svg, Icon$P as SwapVertIcon, Icon$Q as SyncAltIcon, Tag, Icon$J as TelegramIcon, Text, Icon$T as ThunderBgIcon, Icon$S as ThunderIcon, Icon$K as Ticket, Icon$L as TicketRound, ToastContainer, Toggle, Icon$M as TradeIcon, Icon$N as TwitterIcon, Icon$G as VerifiedIcon, Icon$R as WarningIcon, Icon$I as Won, variants$1 as alertVariants, byTextAscending, byTextDescending, connectorLocalStorageKey, darkTheme as dark, darkColors, lightTheme as light, lightColors, makeRender, links as menuConfig, types as toastTypes, useKonamiCheatCode, useMatchBreakpoints, useModal, useParticleBurst, useTable, useTooltip, useWalletModal };
+export { Icon$4 as AddIcon, Alert, Icon$5 as ArrowBackIcon, Icon$6 as ArrowDownIcon, Icon$7 as ArrowDropDownIcon, Icon$8 as ArrowDropUpIcon, Icon$9 as ArrowForwardIcon, Icon$a as AutoRenewIcon, BackgroundImage, GridLayout as BaseLayout, Icon$b as BinanceIcon, Icon$2 as BlockIcon, Box, Breadcrumbs, Icon$c as BunnyPlaceholderIcon, Button, ButtonMenu, ButtonMenuItem, Icon$e as CalculateIcon, Card, CardBody, CardFooter, CardHeader, CardRibbon, Icon$d as CardViewIcon, GridLayout$1 as CardsLayout, Icon$f as ChartIcon, Checkbox, Icon as CheckmarkCircleIcon, Icon$g as CheckmarkIcon, Icon$h as ChevronDownIcon, Icon$i as ChevronLeftIcon, Icon$j as ChevronRightIcon, Icon$k as ChevronUpIcon, Icon$l as CloseIcon, Icon$m as CogIcon, Icon$n as CommunityIcon, ConnectorNames, Icon$o as CopyIcon, Dropdown, Icon$1 as ErrorIcon, FallingBunnies, Icon$p as FarmIcon, Flex, Heading, Icon$q as HelpIcon, Icon$r as HomeIcon, IconButton, Image, Icon$3 as InfoIcon, Input, Link, LinkExternal, Icon$s as ListViewIcon, Icon$t as LogoIcon, Icon$u as LogoRoundIcon, Menu, Icon$v as MetamaskIcon, Icon$w as MinusIcon, Modal, ModalProvider, Icon$x as MoreIcon, Icon$y as NftIcon, Icon$z as NoProfileAvatarIcon, NotificationDot, Icon$A as OpenNewIcon, Icon$C as PancakeRoundIcon, Icon$B as PancakesIcon, Icon$D as PrizeIcon, Progress, Icon$H as ProgressBunny, Radio, Icon$E as RefreshIcon, Icon$F as RemoveIcon, ResetCSS, Icon$O as SearchIcon, Skeleton, Spinner, Svg, Icon$P as SwapVertIcon, Icon$Q as SyncAltIcon, Tag, Icon$J as TelegramIcon, Text, Icon$T as ThunderBgIcon, Icon$S as ThunderIcon, Icon$K as Ticket, Icon$L as TicketRound, ToastContainer, Toggle, Icon$M as TradeIcon, Icon$N as TwitterIcon, Icon$G as VerifiedIcon, Icon$R as WarningIcon, Icon$I as Won, variants$1 as alertVariants, byTextAscending, byTextDescending, connectorLocalStorageKey, darkTheme as dark, darkColors, frostfiColors, lightTheme as light, lightColors, makeRender, links as menuConfig, types as toastTypes, useKonamiCheatCode, useMatchBreakpoints, useModal, useParticleBurst, useTable, useTooltip, useWalletModal };
