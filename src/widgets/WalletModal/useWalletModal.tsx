@@ -14,8 +14,8 @@ const useWalletModal = (
   logout: () => void,
   explorerUrl: string,
   explorerText: string,
-  account?: string,
-  connectUrl?: string
+  connectUrl?: string,
+  account?: string
 ): ReturnType => {
   const [onPresentConnectModal] = useModal(<ConnectModal login={login} connectUrl={connectUrl} />);
   const [onPresentAccountModal] = useModal(

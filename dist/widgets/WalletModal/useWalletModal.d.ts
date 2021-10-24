@@ -3,5 +3,5 @@ interface ReturnType {
     onPresentConnectModal: () => void;
     onPresentAccountModal: () => void;
 }
-declare const useWalletModal: (login: Login, logout: () => void, explorerUrl: string, explorerText: string, account?: string | undefined, connectUrl?: string | undefined) => ReturnType;
+declare const useWalletModal: (login: Login, logout: () => void, explorerUrl: string, explorerText: string, connectUrl?: string | undefined, account?: string | undefined) => ReturnType;
 export default useWalletModal;

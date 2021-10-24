@@ -24,6 +24,12 @@ export declare type Shadows = {
 };
 export declare type Gradients = {
     bubblegum: string;
+    inverseBubblegum: string;
+    cardHeader: string;
+    blue: string;
+    violet: string;
+    violetAlt: string;
+    gold: string;
 };
 export declare type Colors = {
     primary: string;
@@ -36,20 +42,29 @@ export declare type Colors = {
     warning: string;
     contrast: string;
     invertedContrast: string;
-    farmBackground: string;
-    toggleBackground: string;
     input: string;
     inputSecondary: string;
+    nav: string;
+    navHover: string;
     background: string;
     backgroundDisabled: string;
+    farmBackground: string;
+    toggleBackground: string;
+    card: string;
     text: string;
+    thumb: string;
+    thumbAlt: string;
     textDisabled: string;
     textSubtle: string;
     borderColor: string;
-    card: string;
-    nav: string;
+    cardBorder: string;
+    dropdown: string;
+    dropdownAlt: string;
+    alwaysWhite: string;
+    button: string;
     gradients: Gradients;
     binance: string;
+    avalanche: string;
 };
 export declare type ZIndices = {
     dropdown: number;

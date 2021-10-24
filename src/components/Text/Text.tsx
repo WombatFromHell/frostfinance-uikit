@@ -1,5 +1,5 @@
 import styled, { DefaultTheme } from "styled-components";
-import { space, typography } from "styled-system";
+import { space, typography, layout } from "styled-system";
 import getThemeValue from "../../util/getThemeValue";
 import { TextProps } from "./types";
 
@@ -18,16 +18,24 @@ const getFontSize = ({ fontSize, small }: TextProps) => {
 const Text = styled.div<TextProps>`
   color: ${getColor};
   font-size: ${getFontSize};
-  font-weight: ${({ bold }) => (bold ? "bold" : 500)};
+  font-weight: ${({ bold }) => (bold ? 600 : 400)};
   line-height: 1.5;
   ${({ textTransform }) => textTransform && `text-transform: ${textTransform};`}
+  ${({ ellipsis }) =>
+    ellipsis &&
+    `white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;`}
+
   ${space}
   ${typography}
+  ${layout}
 `;
 
 Text.defaultProps = {
   color: "text",
   small: false,
+  ellipsis: false,
 };
 
 export default Text;

@@ -1,5 +1,3 @@
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/extensions */
 import React from "react";
 import styled from "styled-components";
 import getExternalLinkProps from "../../util/getExternalLinkProps";
@@ -11,7 +9,7 @@ const StyledLink = styled(Text)<LinkProps>`
   align-items: center;
   width: fit-content;
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 `;
 
@@ -21,7 +19,7 @@ const Link: React.FC<LinkProps> = ({ external, ...props }) => {
 };
 
 Link.defaultProps = {
-  color: "#6DD784",
+  color: "primary",
 };
 
 export default Link;

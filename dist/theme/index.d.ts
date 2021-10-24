@@ -24,9 +24,7 @@ export interface PancakeTheme {
     radii: Radii;
     zIndices: ZIndices;
 }
-export { default as frostfi } from "./frostfi";
 export { default as dark } from "./dark";
 export { default as light } from "./light";
 export { lightColors } from "./colors";
 export { darkColors } from "./colors";
-export { frostfiColors } from "./colors";

@@ -1,4 +1,4 @@
-import { Colors } from "./types";
+import type { Colors } from './types';
 export declare const baseColors: {
     failure: string;
     primary: string;
@@ -10,7 +10,7 @@ export declare const baseColors: {
 };
 export declare const brandColors: {
     binance: string;
+    avalanche: string;
 };
 export declare const lightColors: Colors;
 export declare const darkColors: Colors;
-export declare const frostfiColors: Colors;

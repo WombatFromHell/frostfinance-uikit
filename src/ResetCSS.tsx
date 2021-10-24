@@ -73,11 +73,11 @@ const ResetCSS = createGlobalStyle`
     width: 8px;
   }
   ::-webkit-scrollbar-thumb {
-    background: #4b5563; 
+    background: ${({ theme }) => theme.colors.thumb}; 
     border-radius: 8px;
   }
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px ${({ theme }) => theme.colors.input}; 
+    box-shadow: inset 0 0 5px ${({ theme }) => theme.colors.thumbAlt}; 
     border-radius: 10px;
   }
 `;

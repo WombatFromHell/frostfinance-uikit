@@ -19,6 +19,7 @@
           "rollup.config.js"
         ]
       }
-    ]
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": ["off"]
   }
 }

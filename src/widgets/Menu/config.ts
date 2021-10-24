@@ -22,8 +22,7 @@ export const links = [
       },
       {
         label: "EXP liquidity",
-        href:
-          "https://app.pangolin.exchange/#/add/0xc7198437980c041c805a1edcba50c1ce5db95118/0xf57b80a574297892b64e9a6c997662889b04a73a",
+        href: "https://app.pangolin.exchange/#/add/0xc7198437980c041c805a1edcba50c1ce5db95118/0xf57b80a574297892b64e9a6c997662889b04a73a",
       },
     ],
   },
@@ -48,13 +47,11 @@ export const links = [
     items: [
       {
         label: "Chart TUNDRA",
-        href:
-          "https://chartex.pro/?symbol=AVAX_PANGOLIN%3ATUNDRA.0x0a081F54d81095D9F8093b5F394Ec9b0EF058876&interval=5&theme=dark",
+        href: "https://chartex.pro/?symbol=AVAX_PANGOLIN%3ATUNDRA.0x0a081F54d81095D9F8093b5F394Ec9b0EF058876&interval=5&theme=dark",
       },
       {
         label: "Chart EXP",
-        href:
-          "https://chartex.pro/?symbol=AVAX_PANGOLIN%3AEXP%2FUSDTe.0x5a615108E682D71E9726c7c1567f7DF968F54BA0&interval=60&theme=dark",
+        href: "https://chartex.pro/?symbol=AVAX_PANGOLIN%3AEXP%2FUSDTe.0x5a615108E682D71E9726c7c1567f7DF968F54BA0&interval=60&theme=dark",
       },
     ],
   },

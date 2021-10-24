@@ -5,12 +5,12 @@ export const light: NavTheme = {
   background: lightColors.nav,
   backgroundSidebar: lightColors.card,
   backgroundFooter: darkColors.background,
-  hover: "#EEEAF4",
+  hover: lightColors.navHover,
 };
 
 export const dark: NavTheme = {
   background: darkColors.nav,
   backgroundSidebar: darkColors.card,
   backgroundFooter: darkColors.background,
-  hover: "#473d5d",
+  hover: darkColors.navHover,
 };
