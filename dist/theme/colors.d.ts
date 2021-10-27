@@ -1,4 +1,4 @@
-import type { Colors } from './types';
+import type { Colors } from "./types";
 export declare const baseColors: {
     failure: string;
     primary: string;

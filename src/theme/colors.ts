@@ -63,7 +63,7 @@ export const darkColors: Colors = {
   // darker text
   secondary: "#40c2e9",
   // dropdown/toggle back color
-  tertiary: "#493F5A",
+  tertiary: "#483f5a",
   background: "#100C18",
   backgroundDisabled: "#3c3742",
   farmBackground: "#a28bd4",

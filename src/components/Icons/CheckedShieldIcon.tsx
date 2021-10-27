@@ -4,7 +4,7 @@ import { Svg, SvgProps } from "../Svg";
 
 const CheckedShieldIcon = (props: SvgProps) => {
   return (
-    <Svg {...props}>
+    <Svg viewBox="0 -4 18 19" {...props}>
       <GiCheckedShield />
     </Svg>
   );

@@ -15,7 +15,7 @@ export * from "./components/Image";
 export * from "./components/Input";
 export * from "./components/Layouts";
 export * from "./components/Radio";
-export * from './components/Select';
+export * from "./components/Select";
 export * from "./components/Slider";
 export * from "./components/Stepper";
 export * from "./components/Svg";

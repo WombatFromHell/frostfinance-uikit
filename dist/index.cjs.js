@@ -83,9 +83,11 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
-var getThemeValue = function (path, fallback) { return function (theme) {
-    return get__default["default"](theme, path, fallback);
-}; };
+var getThemeValue = function (path, fallback) {
+    return function (theme) {
+        return get__default["default"](theme, path, fallback);
+    };
+};
 
 var rotate$2 = styled.keyframes(templateObject_1$Y || (templateObject_1$Y = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var spinStyle = styled.css(templateObject_2$q || (templateObject_2$q = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate$2);
@@ -967,7 +969,7 @@ var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
     return theme.colors[variant === variants$2.SUBTLE ? "input" : "tertiary"];
 };
-var StyledButtonMenu = styled__default["default"].div(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  //background-color: ", ";\n  display: inline-flex;\n  border-radius: 0.5rem;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  //background-color: ", ";\n  display: inline-flex;\n  border-radius: 0.5rem;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])), getBackgroundColor);
+var StyledButtonMenu = styled__default["default"].div(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  background-color: ", ";\n  display: inline-flex;\n  border-radius: 6px;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  background-color: ", ";\n  display: inline-flex;\n  border-radius: 6px;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])), getBackgroundColor);
 var templateObject_1$M;
 
 var ButtonMenu = function (_a) {
@@ -989,7 +991,7 @@ var InactiveButton = styled__default["default"](Button)(templateObject_1$L || (t
 var ButtonMenuItem = function (_a) {
     var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants$2.TOGGLE : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
     if (!isActive) {
-        return (React__default["default"].createElement(InactiveButton, __assign({ forwardedAs: as, variant: "tertiary", "$colorKey": variant === variants$2.TOGGLE ? "textSubtle" : "primary" }, props)));
+        return (React__default["default"].createElement(InactiveButton, __assign({ forwardedAs: as, variant: "tertiary", "$colorKey": variant === variants$2.TOGGLE ? "primary" : "textSubtle" }, props)));
     }
     return React__default["default"].createElement(Button, __assign({ as: as, variant: variant }, props));
 };
@@ -1275,7 +1277,7 @@ Heading.defaultProps = {
 var templateObject_1$B;
 
 var EXPBottleIcon = function (props) {
-    return (React__default["default"].createElement(Svg, __assign({ viewBox: "-11 -5 29 31", style: { marginRight: '5px' } }, props),
+    return (React__default["default"].createElement(Svg, __assign({ viewBox: "-11 -5 29 31", style: { marginRight: "5px" } }, props),
         React__default["default"].createElement("g", { transform: "translate(229.99757,-44.161136)" },
             React__default["default"].createElement("g", { transform: "matrix(0.96969864,0,0,0.86890098,-6.9692352,5.7894797)" },
                 React__default["default"].createElement("path", { style: {
@@ -1333,7 +1335,7 @@ var EXPBottleIcon = function (props) {
 };
 
 var CheckedShieldIcon = function (props) {
-    return (React__default["default"].createElement(Svg, __assign({}, props),
+    return (React__default["default"].createElement(Svg, __assign({ viewBox: "0 -4 18 19" }, props),
         React__default["default"].createElement(gi.GiCheckedShield, null)));
 };
 
@@ -1354,7 +1356,7 @@ var GearIcon = function (props) {
 
 var CustomIcon = function (props) {
     var children = props.children, rest = __rest(props, ["children"]);
-    return (React__default["default"].createElement(Svg, __assign({}, rest), children));
+    return React__default["default"].createElement(Svg, __assign({}, rest), children);
 };
 
 var observerOptions = {
@@ -1514,7 +1516,7 @@ var DropDownListContainer = styled__default["default"].div(templateObject_2$h ||
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 });
-var DropDownContainer = styled__default["default"].div(templateObject_4$8 || (templateObject_4$8 = __makeTemplateObject(["\n  cursor: pointer;\n  width: ", "px;\n  position: relative;\n  background: ", ";\n  border-radius: 16px;\n  height: 40px;\n  min-width: 136px;\n\n  ", " {\n    min-width: 168px;\n  }\n\n  ", "\n\n  svg {\n    position: absolute;\n    right: 16px;\n    top: 50%;\n    transform: translateY(-50%);\n  }\n"], ["\n  cursor: pointer;\n  width: ", "px;\n  position: relative;\n  background: ", ";\n  border-radius: 16px;\n  height: 40px;\n  min-width: 136px;\n\n  ", " {\n    min-width: 168px;\n  }\n\n  ", "\n\n  svg {\n    position: absolute;\n    right: 16px;\n    top: 50%;\n    transform: translateY(-50%);\n  }\n"])), function (_a) {
+var DropDownContainer = styled__default["default"].div(templateObject_4$8 || (templateObject_4$8 = __makeTemplateObject(["\n  cursor: pointer;\n  width: ", "px;\n  position: relative;\n  background: ", ";\n  border-radius: 6px;\n  height: 40px;\n  min-width: 136px;\n\n  ", " {\n    min-width: 168px;\n  }\n\n  ", "\n\n  svg {\n    position: absolute;\n    right: 16px;\n    top: 50%;\n    transform: translateY(-50%);\n  }\n"], ["\n  cursor: pointer;\n  width: ", "px;\n  position: relative;\n  background: ", ";\n  border-radius: 6px;\n  height: 40px;\n  min-width: 136px;\n\n  ", " {\n    min-width: 168px;\n  }\n\n  ", "\n\n  svg {\n    position: absolute;\n    right: 16px;\n    top: 50%;\n    transform: translateY(-50%);\n  }\n"])), function (_a) {
     var width = _a.width;
     return width;
 }, function (_a) {
@@ -1524,7 +1526,7 @@ var DropDownContainer = styled__default["default"].div(templateObject_4$8 || (te
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 }, function (props) {
-    return props.isOpen && styled.css(templateObject_3$c || (templateObject_3$c = __makeTemplateObject(["\n      ", " {\n        border-bottom: 1px solid ", ";\n        box-shadow: ", ";\n        border-radius: 16px 16px 0 0;\n      }\n\n      ", " {\n        height: auto;\n        transform: scaleY(1);\n        opacity: 1;\n        border: 1px solid ", ";\n        border-top-width: 0;\n        border-radius: 0 0 16px 16px;\n        box-shadow: ", ";\n      }\n    "], ["\n      ", " {\n        border-bottom: 1px solid ", ";\n        box-shadow: ", ";\n        border-radius: 16px 16px 0 0;\n      }\n\n      ", " {\n        height: auto;\n        transform: scaleY(1);\n        opacity: 1;\n        border: 1px solid ", ";\n        border-top-width: 0;\n        border-radius: 0 0 16px 16px;\n        box-shadow: ", ";\n      }\n    "])), DropDownHeader, function (_a) {
+    return props.isOpen && styled.css(templateObject_3$c || (templateObject_3$c = __makeTemplateObject(["\n      ", " {\n        border-bottom: 1px solid ", ";\n        box-shadow: ", ";\n        border-radius: 6px 6px 0 0;\n      }\n\n      ", " {\n        height: auto;\n        transform: scaleY(1);\n        opacity: 1;\n        border: 1px solid ", ";\n        border-top-width: 0;\n        border-radius: 0 0 6px 6px;\n        box-shadow: ", ";\n      }\n    "], ["\n      ", " {\n        border-bottom: 1px solid ", ";\n        box-shadow: ", ";\n        border-radius: 6px 6px 0 0;\n      }\n\n      ", " {\n        height: auto;\n        transform: scaleY(1);\n        opacity: 1;\n        border: 1px solid ", ";\n        border-top-width: 0;\n        border-radius: 0 0 6px 6px;\n        box-shadow: ", ";\n      }\n    "])), DropDownHeader, function (_a) {
         var theme = _a.theme;
         return theme.colors.inputSecondary;
     }, function (_a) {
@@ -1922,10 +1924,12 @@ var scaleKeyValues = {
         toggleWidth: "72px",
     },
 };
-var getScale = function (property) { return function (_a) {
-    var _b = _a.scale, scale = _b === void 0 ? scales$3.MD : _b;
-    return scaleKeyValues[scale][property];
-}; };
+var getScale = function (property) {
+    return function (_a) {
+        var _b = _a.scale, scale = _b === void 0 ? scales$3.MD : _b;
+        return scaleKeyValues[scale][property];
+    };
+};
 var Handle = styled__default["default"].div(templateObject_1$l || (templateObject_1$l = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 6px;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"], ["\n  background-color: ", ";\n  border-radius: 6px;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.toggle.handleBackground;
@@ -1962,28 +1966,32 @@ Toggle.defaultProps = {
     scale: scales.MD,
 };
 
-var byTextAscending = function (getTextProperty) { return function (objectA, objectB) {
-    var upperA = getTextProperty(objectA).toUpperCase();
-    var upperB = getTextProperty(objectB).toUpperCase();
-    if (upperA < upperB) {
-        return -1;
-    }
-    if (upperA > upperB) {
-        return 1;
-    }
-    return 0;
-}; };
-var byTextDescending = function (getTextProperty) { return function (objectA, objectB) {
-    var upperA = getTextProperty(objectA).toUpperCase();
-    var upperB = getTextProperty(objectB).toUpperCase();
-    if (upperA > upperB) {
-        return -1;
-    }
-    if (upperA < upperB) {
-        return 1;
-    }
-    return 0;
-}; };
+var byTextAscending = function (getTextProperty) {
+    return function (objectA, objectB) {
+        var upperA = getTextProperty(objectA).toUpperCase();
+        var upperB = getTextProperty(objectB).toUpperCase();
+        if (upperA < upperB) {
+            return -1;
+        }
+        if (upperA > upperB) {
+            return 1;
+        }
+        return 0;
+    };
+};
+var byTextDescending = function (getTextProperty) {
+    return function (objectA, objectB) {
+        var upperA = getTextProperty(objectA).toUpperCase();
+        var upperB = getTextProperty(objectB).toUpperCase();
+        if (upperA > upperB) {
+            return -1;
+        }
+        if (upperA < upperB) {
+            return 1;
+        }
+        return 0;
+    };
+};
 
 var sortByColumn = function (data, sortColumn, columns) {
     var isAscending = null;
@@ -2025,151 +2033,153 @@ var getColumnsByName = function (columns) {
     });
     return columnsByName;
 };
-var createReducer = function () { return function (state, action) {
-    var rows = [];
-    var nextPage = 0;
-    var prevPage = 0;
-    var isAscending = null;
-    var sortedRows = [];
-    var columnCopy = [];
-    var filteredRows = [];
-    var selectedRowsById = {};
-    var stateCopy = __assign({}, state);
-    var rowIds = {};
-    switch (action.type) {
-        case "SET_ROWS":
-            rows = __spreadArray([], action.data, true);
-            // preserve sorting if a sort is already enabled when data changes
-            if (state.sortColumn) {
-                rows = sortByColumn(action.data, state.sortColumn, state.columns);
-            }
-            if (state.paginationEnabled === true) {
-                rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
-            }
-            if (state.paginationEnabled === true) {
-                rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
-            }
-            columnCopy = state.columns.map(function (column) {
-                if (state.sortColumn === column.name) {
-                    return __assign(__assign({}, column), { sorted: {
-                            on: true,
-                            asc: column.sorted.asc,
-                        } });
+var createReducer = function () {
+    return function (state, action) {
+        var rows = [];
+        var nextPage = 0;
+        var prevPage = 0;
+        var isAscending = null;
+        var sortedRows = [];
+        var columnCopy = [];
+        var filteredRows = [];
+        var selectedRowsById = {};
+        var stateCopy = __assign({}, state);
+        var rowIds = {};
+        switch (action.type) {
+            case "SET_ROWS":
+                rows = __spreadArray([], action.data, true);
+                // preserve sorting if a sort is already enabled when data changes
+                if (state.sortColumn) {
+                    rows = sortByColumn(action.data, state.sortColumn, state.columns);
                 }
-                return column;
-            });
-            return __assign(__assign({}, state), { rows: rows, originalRows: action.data, columns: columnCopy });
-        case "NEXT_PAGE":
-            nextPage = state.pagination.page + 1;
-            return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, nextPage), pagination: __assign(__assign({}, state.pagination), { page: nextPage, canNext: nextPage * state.pagination.perPage < state.originalRows.length, canPrev: nextPage !== 1 }) });
-        case "PREV_PAGE":
-            prevPage = state.pagination.page === 1 ? 1 : state.pagination.page - 1;
-            return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, prevPage), pagination: __assign(__assign({}, state.pagination), { page: prevPage, canNext: prevPage * state.pagination.perPage < state.originalRows.length, canPrev: prevPage !== 1 }) });
-        case "TOGGLE_SORT":
-            if (!(action.columnName in state.columnsByName)) {
-                throw new Error("Invalid column, " + action.columnName + " not found");
-            }
-            // loop through all columns and set the sort parameter to off unless
-            // it's the specified column (only one column at a time for )
-            columnCopy = state.columns.map(function (column) {
-                // if the row was found
-                if (action.columnName === column.name) {
-                    if (action.isAscOverride !== undefined) {
-                        // force the sort order
-                        isAscending = action.isAscOverride;
-                    }
-                    else {
-                        // if it's undefined, start by setting to ascending, otherwise toggle
-                        isAscending = column.sorted.asc === undefined ? true : !column.sorted.asc;
-                    }
-                    if (column.sort) {
-                        sortedRows = isAscending ? state.rows.sort(column.sort) : state.rows.sort(column.sort).reverse();
-                        // default to sort by string
-                    }
-                    else {
-                        sortedRows = isAscending
-                            ? state.rows.sort(byTextAscending(function (object) { return object.original[action.columnName]; }))
-                            : state.rows.sort(byTextDescending(function (object) { return object.original[action.columnName]; }));
-                    }
-                    return __assign(__assign({}, column), { sorted: {
-                            on: true,
-                            asc: isAscending,
-                        } });
+                if (state.paginationEnabled === true) {
+                    rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
                 }
-                // set sorting to false for all other columns
-                return __assign(__assign({}, column), { sorted: {
-                        on: false,
-                        asc: false,
-                    } });
-            });
-            return __assign(__assign({}, state), { columns: columnCopy, rows: sortedRows, sortColumn: action.columnName, columnsByName: getColumnsByName(columnCopy) });
-        case "GLOBAL_FILTER":
-            filteredRows = action.filter(state.originalRows);
-            selectedRowsById = {};
-            state.selectedRows.forEach(function (row) {
-                var _a;
-                selectedRowsById[row.id] = (_a = row.selected) !== null && _a !== void 0 ? _a : false;
-            });
-            return __assign(__assign({}, state), { rows: filteredRows.map(function (row) {
-                    return selectedRowsById[row.id] ? __assign(__assign({}, row), { selected: selectedRowsById[row.id] }) : __assign({}, row);
-                }), filterOn: true });
-        case "SELECT_ROW":
-            stateCopy = __assign({}, state);
-            stateCopy.rows = stateCopy.rows.map(function (row) {
-                var newRow = __assign({}, row);
-                if (newRow.id === action.rowId) {
-                    newRow.selected = !newRow.selected;
+                if (state.paginationEnabled === true) {
+                    rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
                 }
-                return newRow;
-            });
-            stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
-                var newRow = __assign({}, row);
-                if (newRow.id === action.rowId) {
-                    newRow.selected = !newRow.selected;
-                }
-                return newRow;
-            });
-            stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected === true; });
-            stateCopy.toggleAllState =
-                stateCopy.selectedRows.length === stateCopy.rows.length
-                    ? (stateCopy.toggleAllState = true)
-                    : (stateCopy.toggleAllState = false);
-            return stateCopy;
-        case "SEARCH_STRING":
-            stateCopy = __assign({}, state);
-            stateCopy.rows = stateCopy.originalRows.filter(function (row) {
-                return (row.cells.filter(function (cell) {
-                    if (cell.value.includes(action.searchString)) {
-                        return true;
+                columnCopy = state.columns.map(function (column) {
+                    if (state.sortColumn === column.name) {
+                        return __assign(__assign({}, column), { sorted: {
+                                on: true,
+                                asc: column.sorted.asc,
+                            } });
                     }
-                    return false;
-                }).length > 0);
-            });
-            return stateCopy;
-        case "TOGGLE_ALL":
-            if (state.selectedRows.length < state.rows.length) {
-                stateCopy.rows = stateCopy.rows.map(function (row) {
-                    rowIds[row.id] = true;
-                    return __assign(__assign({}, row), { selected: true });
+                    return column;
                 });
-                stateCopy.toggleAllState = true;
-            }
-            else {
-                stateCopy.rows = stateCopy.rows.map(function (row) {
-                    rowIds[row.id] = false;
-                    return __assign(__assign({}, row), { selected: false });
+                return __assign(__assign({}, state), { rows: rows, originalRows: action.data, columns: columnCopy });
+            case "NEXT_PAGE":
+                nextPage = state.pagination.page + 1;
+                return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, nextPage), pagination: __assign(__assign({}, state.pagination), { page: nextPage, canNext: nextPage * state.pagination.perPage < state.originalRows.length, canPrev: nextPage !== 1 }) });
+            case "PREV_PAGE":
+                prevPage = state.pagination.page === 1 ? 1 : state.pagination.page - 1;
+                return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, prevPage), pagination: __assign(__assign({}, state.pagination), { page: prevPage, canNext: prevPage * state.pagination.perPage < state.originalRows.length, canPrev: prevPage !== 1 }) });
+            case "TOGGLE_SORT":
+                if (!(action.columnName in state.columnsByName)) {
+                    throw new Error("Invalid column, " + action.columnName + " not found");
+                }
+                // loop through all columns and set the sort parameter to off unless
+                // it's the specified column (only one column at a time for )
+                columnCopy = state.columns.map(function (column) {
+                    // if the row was found
+                    if (action.columnName === column.name) {
+                        if (action.isAscOverride !== undefined) {
+                            // force the sort order
+                            isAscending = action.isAscOverride;
+                        }
+                        else {
+                            // if it's undefined, start by setting to ascending, otherwise toggle
+                            isAscending = column.sorted.asc === undefined ? true : !column.sorted.asc;
+                        }
+                        if (column.sort) {
+                            sortedRows = isAscending ? state.rows.sort(column.sort) : state.rows.sort(column.sort).reverse();
+                            // default to sort by string
+                        }
+                        else {
+                            sortedRows = isAscending
+                                ? state.rows.sort(byTextAscending(function (object) { return object.original[action.columnName]; }))
+                                : state.rows.sort(byTextDescending(function (object) { return object.original[action.columnName]; }));
+                        }
+                        return __assign(__assign({}, column), { sorted: {
+                                on: true,
+                                asc: isAscending,
+                            } });
+                    }
+                    // set sorting to false for all other columns
+                    return __assign(__assign({}, column), { sorted: {
+                            on: false,
+                            asc: false,
+                        } });
                 });
-                stateCopy.toggleAllState = false;
-            }
-            stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
-                return row.id in rowIds ? __assign(__assign({}, row), { selected: rowIds[row.id] }) : __assign({}, row);
-            });
-            stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected; });
-            return stateCopy;
-        default:
-            throw new Error("Invalid reducer action");
-    }
-}; };
+                return __assign(__assign({}, state), { columns: columnCopy, rows: sortedRows, sortColumn: action.columnName, columnsByName: getColumnsByName(columnCopy) });
+            case "GLOBAL_FILTER":
+                filteredRows = action.filter(state.originalRows);
+                selectedRowsById = {};
+                state.selectedRows.forEach(function (row) {
+                    var _a;
+                    selectedRowsById[row.id] = (_a = row.selected) !== null && _a !== void 0 ? _a : false;
+                });
+                return __assign(__assign({}, state), { rows: filteredRows.map(function (row) {
+                        return selectedRowsById[row.id] ? __assign(__assign({}, row), { selected: selectedRowsById[row.id] }) : __assign({}, row);
+                    }), filterOn: true });
+            case "SELECT_ROW":
+                stateCopy = __assign({}, state);
+                stateCopy.rows = stateCopy.rows.map(function (row) {
+                    var newRow = __assign({}, row);
+                    if (newRow.id === action.rowId) {
+                        newRow.selected = !newRow.selected;
+                    }
+                    return newRow;
+                });
+                stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
+                    var newRow = __assign({}, row);
+                    if (newRow.id === action.rowId) {
+                        newRow.selected = !newRow.selected;
+                    }
+                    return newRow;
+                });
+                stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected === true; });
+                stateCopy.toggleAllState =
+                    stateCopy.selectedRows.length === stateCopy.rows.length
+                        ? (stateCopy.toggleAllState = true)
+                        : (stateCopy.toggleAllState = false);
+                return stateCopy;
+            case "SEARCH_STRING":
+                stateCopy = __assign({}, state);
+                stateCopy.rows = stateCopy.originalRows.filter(function (row) {
+                    return (row.cells.filter(function (cell) {
+                        if (cell.value.includes(action.searchString)) {
+                            return true;
+                        }
+                        return false;
+                    }).length > 0);
+                });
+                return stateCopy;
+            case "TOGGLE_ALL":
+                if (state.selectedRows.length < state.rows.length) {
+                    stateCopy.rows = stateCopy.rows.map(function (row) {
+                        rowIds[row.id] = true;
+                        return __assign(__assign({}, row), { selected: true });
+                    });
+                    stateCopy.toggleAllState = true;
+                }
+                else {
+                    stateCopy.rows = stateCopy.rows.map(function (row) {
+                        rowIds[row.id] = false;
+                        return __assign(__assign({}, row), { selected: false });
+                    });
+                    stateCopy.toggleAllState = false;
+                }
+                stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
+                    return row.id in rowIds ? __assign(__assign({}, row), { selected: rowIds[row.id] }) : __assign({}, row);
+                });
+                stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected; });
+                return stateCopy;
+            default:
+                throw new Error("Invalid reducer action");
+        }
+    };
+};
 var sortDataInOrder = function (data, columns) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return data.map(function (row) {
@@ -2525,58 +2535,58 @@ var useKonamiCheatCode = function (matchedCodeHandler) {
 };
 
 var baseColors = {
-    failure: '#ED4B9E',
+    failure: "#ED4B9E",
     // button/text/highlight primary color
-    primary: '#EBE1FC',
-    primaryBright: '#fa8b03',
+    primary: "#EBE1FC",
+    primaryBright: "#fa8b03",
     // secondary button color
-    primaryDark: '#353547',
-    secondary: '#8B5B20',
+    primaryDark: "#353547",
+    secondary: "#8B5B20",
     // radio checked
-    success: '#a28bd4',
-    warning: '#FFB237',
+    success: "#a28bd4",
+    warning: "#FFB237",
 };
 var brandColors = {
-    binance: '#F0B90B',
-    avalanche: '',
+    binance: "#F0B90B",
+    avalanche: "",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: '#FAF9FA', backgroundDisabled: '#E9EAEB', farmBackground: '#FAF9FA', toggleBackground: '', contrast: '#191326', invertedContrast: '#FFFFFF', input: '#eeeaf4', inputSecondary: '#46557d', tertiary: '#EFF4F5', text: '#8B5B20', textDisabled: '#BDC2C4', textSubtle: '#6356B1', borderColor: '#E9EAEB', card: "#030323", cardBorder: '', dropdown: '', dropdownAlt: '', alwaysWhite: '', button: '', nav: '#FAF9FA', navHover: "#EEEAF4", 
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", farmBackground: "#FAF9FA", toggleBackground: "", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#46557d", tertiary: "#EFF4F5", text: "#8B5B20", textDisabled: "#BDC2C4", textSubtle: "#6356B1", borderColor: "#E9EAEB", card: "#030323", cardBorder: "", dropdown: "", dropdownAlt: "", alwaysWhite: "", button: "", nav: "#FAF9FA", navHover: "#EEEAF4", 
     // chrome track color
     thumb: "#a28bd4", 
     // chrome track shadow
     thumbAlt: "#483f5a", gradients: {
-        bubblegum: 'linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)',
-        inverseBubblegum: '',
-        cardHeader: '',
-        blue: '',
-        violet: '',
-        violetAlt: '',
-        gold: '',
+        bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
+        inverseBubblegum: "",
+        cardHeader: "",
+        blue: "",
+        violet: "",
+        violetAlt: "",
+        gold: "",
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { 
     // darker text
-    secondary: '#40c2e9', 
+    secondary: "#40c2e9", 
     // dropdown/toggle back color
-    tertiary: '#493F5A', background: '#100C18', backgroundDisabled: '#3c3742', farmBackground: '#a28bd4', toggleBackground: '', contrast: '#c9c0f5', invertedContrast: '#191326', input: '#483f5a', inputSecondary: '#66578D', primaryDark: '#A28BD4', text: '#EAE2FC', textDisabled: '#666171', 
+    tertiary: "#483f5a", background: "#100C18", backgroundDisabled: "#3c3742", farmBackground: "#a28bd4", toggleBackground: "", contrast: "#c9c0f5", invertedContrast: "#191326", input: "#483f5a", inputSecondary: "#66578D", primaryDark: "#A28BD4", text: "#EAE2FC", textDisabled: "#666171", 
     // button text
-    textSubtle: '#A28BD4', 
+    textSubtle: "#A28BD4", 
     // badge border
-    borderColor: '#859BBA', card: '#27262C', cardBorder: '', dropdown: '', dropdownAlt: '', alwaysWhite: '', 
+    borderColor: "#859BBA", card: "#27262C", cardBorder: "", dropdown: "", dropdownAlt: "", alwaysWhite: "", 
     // button background color
-    button: '#a28bd4', 
+    button: "#a28bd4", 
     // menu background color
-    nav: '#100C18', navHover: "#473d5d", 
+    nav: "#100C18", navHover: "#473d5d", 
     // chrome track color
     thumb: "#a28bd4", 
     // chrome track shadow
     thumbAlt: "#483f5a", gradients: {
-        bubblegum: 'linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)',
-        inverseBubblegum: '',
-        cardHeader: '',
-        blue: '',
-        violet: '',
-        violetAlt: '',
-        gold: '',
+        bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
+        inverseBubblegum: "",
+        cardHeader: "",
+        blue: "",
+        violet: "",
+        violetAlt: "",
+        gold: "",
     } });
 
 var light$6 = {

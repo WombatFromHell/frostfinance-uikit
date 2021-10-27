@@ -28,7 +28,7 @@ const ButtonMenuItem: PolymorphicComponent<ButtonMenuItemProps, "button"> = ({
       <InactiveButton
         forwardedAs={as}
         variant="tertiary"
-        $colorKey={variant === variants.TOGGLE ? "textSubtle" : "primary"}
+        $colorKey={variant === variants.TOGGLE ? "primary" : "textSubtle"}
         {...props}
       />
     );
