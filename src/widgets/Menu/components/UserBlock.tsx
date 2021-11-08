@@ -1,62 +1,80 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { size, SizeProps, space, SpaceProps } from "styled-system";
 import Button from "../../../components/Button/Button";
 import { useWalletModal } from "../../WalletModal";
 import { Login } from "../../WalletModal/types";
 
-interface Props {
+interface UserBlockProps extends SpaceProps, SizeProps {
   account?: string;
+  isDark?: boolean;
   login: Login;
   logout: () => void;
-  isDark: boolean;
   explorerUrl: string;
   explorerText: string;
   connectUrl?: string;
+  isNarrow?: boolean;
 }
 
-const UserBlock: React.FC<Props> = ({ account, login, logout, explorerUrl, explorerText, connectUrl }) => {
+const StyledWalletWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ${space}
+  ${size}
+`;
+
+const StyledWalletButton = styled(Button)<{ isNarrow?: boolean }>`
+  color: white;
+  background-color: ${({ theme }) => theme.colors.backgroundWallet};
+  padding: 0 0.33rem;
+  height: ${({ isNarrow }) => (isNarrow ? "50px" : "35px")};
+  ${({ isNarrow }) =>
+    isNarrow
+      ? css`
+          height: 50px;
+        `
+      : css`
+          height: 35px;
+          margin-right: 0.75em;
+        `}
+`;
+
+const UserBlock = (props: UserBlockProps) => {
+  const { account, login, logout, isDark, isNarrow, explorerUrl, explorerText, connectUrl, ...rest } = props;
   const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(
     login,
     logout,
     explorerUrl,
     explorerText,
-    account,
-    connectUrl
+    connectUrl,
+    account
   );
   const accountEllipsis = account ? `${account.substring(0, 4)}...${account.substring(account.length - 4)}` : null;
-
-  const OwnButton = styled(Button)`
-    border-radius: 6px;
-    color: ${({ theme }) => (theme.isDark ? theme.colors.primaryDark : theme.colors.primary)};
-    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-    border: solid 3px transparent;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    box-shadow: ${({ theme }) => (theme.isDark ? `2px 1000px 1px #1f2b46 inset` : `2px 1000px 1px #fff inset`)};
-  `;
-
   return (
-    <div>
+    <StyledWalletWrapper {...rest}>
       {account ? (
-        <OwnButton
-          scale="sm"
+        <StyledWalletButton
+          isNarrow={isNarrow}
+          size="sm"
+          variant="tertiary"
           onClick={() => {
             onPresentAccountModal();
           }}
         >
           {accountEllipsis}
-        </OwnButton>
+        </StyledWalletButton>
       ) : (
-        <OwnButton
-          scale="sm"
+        <StyledWalletButton
+          size="sm"
           onClick={() => {
             onPresentConnectModal();
           }}
         >
           Connect
-        </OwnButton>
+        </StyledWalletButton>
       )}
-    </div>
+    </StyledWalletWrapper>
   );
 };
 

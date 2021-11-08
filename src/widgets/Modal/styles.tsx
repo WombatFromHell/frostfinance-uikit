@@ -47,13 +47,14 @@ export const ModalContainer = styled(Box)<{ minWidth: string }>`
   box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid ${({ theme }) => theme.colors.borderColor};
   border-radius: 6px;
-  width: 100%;
+  width: 75%;
+  max-width: 600px;
   max-height: 100vh;
   z-index: ${({ theme }) => theme.zIndices.modal};
 
   ${({ theme }) => theme.mediaQueries.xs} {
-    width: auto;
+    width: 100%;
     min-width: ${({ minWidth }) => minWidth};
-    max-width: 100%;
+    max-width: 600px;
   }
 `;

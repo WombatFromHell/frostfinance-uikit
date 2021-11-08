@@ -1,4 +1,4 @@
-import { darkColors, lightColors } from "../../theme/colors";
+import { duneColors, darkColors, lightColors } from "../../theme/colors";
 import { NavTheme } from "./types";
 
 export const light: NavTheme = {
@@ -13,4 +13,11 @@ export const dark: NavTheme = {
   backgroundSidebar: darkColors.card,
   backgroundFooter: darkColors.background,
   hover: darkColors.navHover,
+};
+
+export const dune: NavTheme = {
+  background: duneColors.nav,
+  backgroundSidebar: duneColors.card,
+  backgroundFooter: duneColors.background,
+  hover: duneColors.navHover,
 };

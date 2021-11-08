@@ -55,11 +55,11 @@ export const Input = styled.input<InputProps>`
   }
 
   &:focus + ${Handle} {
-    box-shadow: ${({ theme }) => theme.shadows.focus};
+    box-shadow: ${({ theme }) => (theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus)};
   }
 
   &:hover + ${Handle}:not(:disabled):not(:checked) {
-    box-shadow: ${({ theme }) => theme.shadows.focus};
+    box-shadow: ${({ theme }) => (theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus)};
   }
 `;
 
@@ -67,7 +67,7 @@ const StyledToggle = styled.div<ToggleProps>`
   align-items: center;
   background-color: ${({ theme, checked }) => theme.colors[checked ? "success" : "input"]};
   border-radius: 6px;
-  box-shadow: ${({ theme }) => theme.shadows.inset};
+  box-shadow: ${({ theme }) => (theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset)};
   cursor: pointer;
   display: inline-flex;
   height: ${getScale("toggleHeight")};

@@ -10,14 +10,14 @@ interface StyledInputProps extends InputProps {
  */
 const getBoxShadow = ({ isSuccess = false, isWarning = false, theme }: StyledInputProps) => {
   if (isWarning) {
-    return theme.shadows.warning;
+    return theme.colors.shadows ? theme.colors.shadows.warning : theme.shadows.warning;
   }
 
   if (isSuccess) {
-    return theme.shadows.success;
+    return theme.colors.shadows ? theme.colors.shadows.success : theme.shadows.success;
   }
 
-  return theme.shadows.inset;
+  return theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset;
 };
 
 const getHeight = ({ scale = scales.MD }: StyledInputProps) => {
@@ -57,7 +57,7 @@ const Input = styled.input<InputProps>`
   }
 
   &:focus:not(:disabled) {
-    box-shadow: ${({ theme }) => theme.shadows.focus};
+    box-shadow: ${({ theme }) => (theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus)};
   }
 `;
 

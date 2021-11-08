@@ -1,13 +1,15 @@
 import React from "react";
+import { SizeProps, SpaceProps } from "styled-system";
 import { Login } from "../../WalletModal/types";
-interface Props {
+interface UserBlockProps extends SpaceProps, SizeProps {
     account?: string;
+    isDark?: boolean;
     login: Login;
     logout: () => void;
-    isDark: boolean;
     explorerUrl: string;
     explorerText: string;
     connectUrl?: string;
+    isNarrow?: boolean;
 }
-declare const _default: React.NamedExoticComponent<Props>;
+declare const _default: React.MemoExoticComponent<(props: UserBlockProps) => JSX.Element>;
 export default _default;

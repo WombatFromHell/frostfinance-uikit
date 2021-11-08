@@ -48,6 +48,8 @@ export declare type Colors = {
     navHover: string;
     background: string;
     backgroundDisabled: string;
+    backgroundMenubar: string;
+    backgroundWallet: string;
     farmBackground: string;
     toggleBackground: string;
     card: string;
@@ -63,6 +65,7 @@ export declare type Colors = {
     alwaysWhite: string;
     button: string;
     gradients: Gradients;
+    shadows?: Shadows;
     binance: string;
     avalanche: string;
 };

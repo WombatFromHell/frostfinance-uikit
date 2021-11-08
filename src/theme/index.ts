@@ -27,7 +27,9 @@ export interface PancakeTheme {
 }
 
 export { default as dark } from "./dark";
+export { default as dune } from "./dune";
 export { default as light } from "./light";
 
 export { lightColors } from "./colors";
 export { darkColors } from "./colors";
+export { duneColors } from "./colors";

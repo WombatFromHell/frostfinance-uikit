@@ -54,6 +54,8 @@ export type Colors = {
   navHover: string;
   background: string;
   backgroundDisabled: string;
+  backgroundMenubar: string;
+  backgroundWallet: string;
   farmBackground: string;
   toggleBackground: string;
   card: string;
@@ -71,6 +73,9 @@ export type Colors = {
 
   // Gradients
   gradients: Gradients;
+
+  // Shadows
+  shadows?: Shadows;
 
   // Brand colors
   binance: string;
