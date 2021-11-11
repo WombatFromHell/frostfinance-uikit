@@ -219,8 +219,8 @@ var scaleVariants = (_a$3 = {},
     _a$3);
 var styleVariants$1 = (_b$1 = {},
     _b$1[variants$2.PRIMARY] = {
-        backgroundColor: "primary",
-        color: "white",
+        backgroundColor: "button",
+        color: "primary",
     },
     _b$1[variants$2.SECONDARY] = {
         backgroundColor: "transparent",
@@ -897,7 +897,7 @@ var Input$1 = styled__default["default"].input(templateObject_1$P || (templateOb
     return theme.colors.textDisabled;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus;
+    return (theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus);
 });
 Input$1.defaultProps = {
     scale: scales$4.MD,
@@ -1112,13 +1112,13 @@ var Checkbox = styled__default["default"].input.attrs({ type: "checkbox" })(temp
     return theme.colors.input;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset;
+    return (theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset);
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus;
+    return (theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus);
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus;
+    return (theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus);
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.success;
@@ -1150,7 +1150,7 @@ var DropdownContent = styled__default["default"].div(templateObject_1$E || (temp
     return (theme.isDark ? "#FFFFFF" : "#161f33");
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.level1 : theme.shadows.level1;
+    return (theme.colors.shadows ? theme.colors.shadows.level1 : theme.shadows.level1);
 }, function (_a) {
     var theme = _a.theme;
     return theme.zIndices.dropdown;
@@ -1478,13 +1478,13 @@ var Radio = styled__default["default"].input.attrs({ type: "radio" })(templateOb
     return theme.colors.input;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset;
+    return (theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset);
 }, getCheckedScale, getCheckedScale, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus;
+    return (theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus);
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus;
+    return (theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus);
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.success;
@@ -1500,7 +1500,7 @@ var templateObject_1$w;
 
 var DropDownHeader = styled__default["default"].div(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n  width: 100%;\n  height: 40px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 0px 16px;\n  box-shadow: ", ";\n  border: 1px solid ", ";\n  border-radius: 6px;\n  background: ", ";\n  transition: border-radius 0.15s;\n"], ["\n  width: 100%;\n  height: 40px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 0px 16px;\n  box-shadow: ", ";\n  border: 1px solid ", ";\n  border-radius: 6px;\n  background: ", ";\n  transition: border-radius 0.15s;\n"])), function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset;
+    return (theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset);
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.inputSecondary;
@@ -1820,7 +1820,7 @@ var StyledProgress = styled__default["default"].div(templateObject_2$f || (templ
     return theme.colors.input;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset;
+    return (theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset);
 }, Bar, function (_a) {
     var variant = _a.variant;
     return (variant === variants.FLAT ? "0" : "32px");
@@ -1938,17 +1938,17 @@ var Handle = styled__default["default"].div(templateObject_1$l || (templateObjec
 }, getScale("handleHeight"), getScale("handleLeft"), getScale("handleTop"), getScale("handleWidth"));
 var Input = styled__default["default"].input(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, getScale("checkedLeft"), Handle, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus;
+    return (theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus);
 }, Handle, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus;
+    return (theme.colors.shadows ? theme.colors.shadows.focus : theme.shadows.focus);
 });
 var StyledToggle = styled__default["default"].div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 6px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 6px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
     var theme = _a.theme, checked = _a.checked;
     return theme.colors[checked ? "success" : "input"];
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset;
+    return (theme.colors.shadows ? theme.colors.shadows.inset : theme.shadows.inset);
 }, getScale("toggleHeight"), getScale("toggleWidth"));
 var templateObject_1$l, templateObject_2$c, templateObject_3$8;
 
@@ -2943,7 +2943,7 @@ var ModalBackButton = function (_a) {
     return (React__default["default"].createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
         React__default["default"].createElement(Icon$1t, { color: "primary" })));
 };
-var ModalContainer = styled__default["default"](Box)(templateObject_4$4 || (templateObject_4$4 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 6px;\n  width: 75%;\n  max-width: 600px;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: 100%;\n    min-width: ", ";\n    max-width: 600px;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 6px;\n  width: 75%;\n  max-width: 600px;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: 100%;\n    min-width: ", ";\n    max-width: 600px;\n  }\n"])), function (_a) {
+var ModalContainer = styled__default["default"](Box)(templateObject_4$4 || (templateObject_4$4 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 6px;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 6px;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.modal.background;
 }, function (_a) {
@@ -3968,7 +3968,8 @@ var StyledWalletButton = styled__default["default"](Button)(templateObject_4$1 |
     return (isNarrow ? "50px" : "35px");
 }, function (_a) {
     var isNarrow = _a.isNarrow;
-    return isNarrow ? styled.css(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n    height: 50px;\n  "], ["\n    height: 50px;\n  "]))) : styled.css(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n    height: 35px;\n    margin-right: 0.75em;\n  "], ["\n    height: 35px;\n    margin-right: 0.75em;\n  "])));
+    return isNarrow
+        ? styled.css(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n          height: 50px;\n        "], ["\n          height: 50px;\n        "]))) : styled.css(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n          height: 35px;\n          margin-right: 0.75em;\n        "], ["\n          height: 35px;\n          margin-right: 0.75em;\n        "])));
 });
 var UserBlock = function (props) {
     var account = props.account, login = props.login, logout = props.logout; props.isDark; var isNarrow = props.isNarrow, explorerUrl = props.explorerUrl, explorerText = props.explorerText, connectUrl = props.connectUrl, rest = __rest(props, ["account", "login", "logout", "isDark", "isNarrow", "explorerUrl", "explorerText", "connectUrl"]);
