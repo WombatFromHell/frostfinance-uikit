@@ -1,4 +1,4 @@
-import { duneColors, darkColors, lightColors } from "../../theme/colors";
+import { auroraColors, fuseColors, duneColors, darkColors, lightColors } from "../../theme/colors";
 import { shadows } from "../../theme/base";
 import { CardTheme } from "./types";
 
@@ -14,7 +14,7 @@ export const light: CardTheme = {
     bubblegum: lightColors.gradients.bubblegum,
     violet: lightColors.gradients.violet,
   },
-  dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
+  dropShadow: lightColors.dropShadow,
 };
 
 export const dark: CardTheme = {
@@ -29,12 +29,12 @@ export const dark: CardTheme = {
     bubblegum: lightColors.gradients.bubblegum,
     violet: darkColors.gradients.violet,
   },
-  dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
+  dropShadow: darkColors.dropShadow,
 };
 
 export const dune: CardTheme = {
   background: duneColors.card,
-  boxShadow: shadows.level1,
+  boxShadow: duneColors.shadows?.level1 || shadows.level1,
   boxShadowActive: shadows.active,
   boxShadowSuccess: shadows.success,
   boxShadowWarning: shadows.warning,
@@ -44,5 +44,35 @@ export const dune: CardTheme = {
     bubblegum: duneColors.gradients.bubblegum,
     violet: duneColors.gradients.violet,
   },
-  dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
+  dropShadow: duneColors.dropShadow,
+};
+
+export const fuse: CardTheme = {
+  background: fuseColors.card,
+  boxShadow: fuseColors.shadows?.level1 || shadows.level1,
+  boxShadowActive: fuseColors.shadows?.active || shadows.active,
+  boxShadowSuccess: fuseColors.shadows?.success || shadows.success,
+  boxShadowWarning: fuseColors.shadows?.warning || shadows.warning,
+  cardHeaderBackground: {
+    default: fuseColors.gradients.cardHeader,
+    blue: fuseColors.gradients.blue,
+    bubblegum: fuseColors.gradients.bubblegum,
+    violet: fuseColors.gradients.violet,
+  },
+  dropShadow: fuseColors.dropShadow,
+};
+
+export const aurora: CardTheme = {
+  background: auroraColors.card,
+  boxShadow: auroraColors.shadows?.level1 || shadows.level1,
+  boxShadowActive: auroraColors.shadows?.active || shadows.active,
+  boxShadowSuccess: auroraColors.shadows?.success || shadows.success,
+  boxShadowWarning: auroraColors.shadows?.warning || shadows.warning,
+  cardHeaderBackground: {
+    default: auroraColors.gradients.cardHeader,
+    blue: auroraColors.gradients.blue,
+    bubblegum: auroraColors.gradients.bubblegum,
+    violet: auroraColors.gradients.violet,
+  },
+  dropShadow: auroraColors.dropShadow,
 };

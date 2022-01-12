@@ -64,6 +64,7 @@ export declare type Colors = {
     dropdownAlt: string;
     alwaysWhite: string;
     button: string;
+    dropShadow: string;
     gradients: Gradients;
     shadows?: Shadows;
     binance: string;

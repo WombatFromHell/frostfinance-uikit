@@ -1,4 +1,4 @@
-import { duneColors, darkColors, lightColors } from "../../theme/colors";
+import { auroraColors, fuseColors, duneColors, darkColors, lightColors } from "../../theme/colors";
 import { ToggleTheme } from "./types";
 
 export const light: ToggleTheme = {
@@ -11,4 +11,12 @@ export const dark: ToggleTheme = {
 
 export const dune: ToggleTheme = {
   handleBackground: duneColors.card,
+};
+
+export const fuse: ToggleTheme = {
+  handleBackground: fuseColors.card,
+};
+
+export const aurora: ToggleTheme = {
+  handleBackground: auroraColors.card,
 };

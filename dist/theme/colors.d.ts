@@ -15,3 +15,5 @@ export declare const brandColors: {
 export declare const lightColors: Colors;
 export declare const darkColors: Colors;
 export declare const duneColors: Colors;
+export declare const fuseColors: Colors;
+export declare const auroraColors: Colors;

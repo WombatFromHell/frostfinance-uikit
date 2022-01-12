@@ -70,6 +70,7 @@ export type Colors = {
   dropdownAlt: string;
   alwaysWhite: string;
   button: string;
+  dropShadow: string;
 
   // Gradients
   gradients: Gradients;

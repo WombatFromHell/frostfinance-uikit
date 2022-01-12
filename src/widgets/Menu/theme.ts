@@ -1,4 +1,4 @@
-import { duneColors, darkColors, lightColors } from "../../theme/colors";
+import { auroraColors, fuseColors, duneColors, darkColors, lightColors } from "../../theme/colors";
 import { NavTheme } from "./types";
 
 export const light: NavTheme = {
@@ -20,4 +20,18 @@ export const dune: NavTheme = {
   backgroundSidebar: duneColors.card,
   backgroundFooter: duneColors.background,
   hover: duneColors.navHover,
+};
+
+export const fuse: NavTheme = {
+  background: fuseColors.nav,
+  backgroundSidebar: fuseColors.card,
+  backgroundFooter: fuseColors.background,
+  hover: fuseColors.navHover,
+};
+
+export const aurora: NavTheme = {
+  background: auroraColors.nav,
+  backgroundSidebar: auroraColors.card,
+  backgroundFooter: auroraColors.background,
+  hover: auroraColors.navHover,
 };

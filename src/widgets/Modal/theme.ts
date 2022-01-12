@@ -1,4 +1,4 @@
-import { duneColors, darkColors, lightColors } from "../../theme/colors";
+import { auroraColors, fuseColors, duneColors, darkColors, lightColors } from "../../theme/colors";
 import { ModalTheme } from "./types";
 
 export const light: ModalTheme = {
@@ -11,4 +11,12 @@ export const dark: ModalTheme = {
 
 export const dune: ModalTheme = {
   background: duneColors.card,
+};
+
+export const fuse: ModalTheme = {
+  background: fuseColors.card,
+};
+
+export const aurora: ModalTheme = {
+  background: auroraColors.card,
 };

@@ -48,6 +48,7 @@ export const lightColors: Colors = {
   thumb: "#a28bd4",
   // chrome track shadow
   thumbAlt: "#483f5a",
+  dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     inverseBubblegum: "",
@@ -97,6 +98,7 @@ export const darkColors: Colors = {
   thumb: "#a28bd4",
   // chrome track shadow
   thumbAlt: "#483f5a",
+  dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     inverseBubblegum: "",
@@ -148,6 +150,7 @@ export const duneColors: Colors = {
   thumb: "#354461",
   // chrome track shadow
   thumbAlt: "#1A202C",
+  dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     inverseBubblegum: "",
@@ -164,5 +167,115 @@ export const duneColors: Colors = {
     warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
     focus: "0px 0px 0px 1px #C9A08F, 0px 0px 0px 4px rgba(201, 160, 143, 0.6)",
     inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
+  },
+};
+
+export const fuseColors: Colors = {
+  ...baseColors,
+  ...brandColors,
+  primary: "#E9E9E9",
+  primaryDark: "#A8ADAD",
+  success: "#7CC76E",
+  // darker text
+  secondary: "#A8ADAD",
+  // dropdown/toggle back color
+  tertiary: "#5E9450",
+  background: "#0E1214",
+  backgroundDisabled: "rgba(31, 38, 41, 0.66)",
+  backgroundMenubar: "rgba(31, 38, 41, 0.85)",
+  backgroundWallet: "#232C2F",
+  farmBackground: "#5E9450",
+  toggleBackground: "",
+  contrast: "#85BC87",
+  invertedContrast: "#191326",
+  input: "#202629",
+  inputSecondary: "#262E31",
+  text: "#E9E9E9",
+  textDisabled: "rgba(168, 173, 173, 0.25)",
+  // row header text
+  textSubtle: "#879C88",
+  // badge border
+  borderColor: "#324140",
+  card: "#192023",
+  cardBorder: "",
+  dropdown: "",
+  dropdownAlt: "",
+  alwaysWhite: "",
+  // button background color
+  button: "#5E9450",
+  // menu background color
+  nav: "#181D1F",
+  navHover: "#473d5d",
+  // chrome track color
+  thumb: "#354461",
+  // chrome track shadow
+  thumbAlt: "#1A202C",
+  dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
+  gradients: {
+    bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
+    inverseBubblegum: "",
+    cardHeader: "",
+    blue: "",
+    violet: "",
+    violetAlt: "",
+    gold: "",
+  },
+  shadows: {
+    level1: "",
+    active: "0px 0px 0px 1px #0098A1, 0px 0px 4px 8px rgba(31, 199, 212, 0.4)",
+    success: "0px 0px 0px 1px #31D0AA, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
+    warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
+    focus: "0px 0px 0px 1px rgba(124, 199, 110, 1), 0px 0px 0px 4px rgba(124, 199, 110, 0.5)",
+    inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
+  },
+};
+
+export const auroraColors: Colors = {
+  ...baseColors,
+  ...brandColors,
+  // darker text
+  secondary: "#40c2e9",
+  // dropdown/toggle back color
+  tertiary: "#483f5a",
+  background: "#1A202C",
+  backgroundDisabled: "#3c3742",
+  backgroundMenubar: "rgba(16, 12, 24, 0.8)",
+  backgroundWallet: "rgb(50, 50, 70)",
+  farmBackground: "#1A202C",
+  toggleBackground: "",
+  contrast: "#c9c0f5",
+  invertedContrast: "#191326",
+  input: "#483f5a",
+  inputSecondary: "#66578D",
+  primaryDark: "#A28BD4",
+  text: "#EAE2FC",
+  textDisabled: "#666171",
+  // button text
+  textSubtle: "#A28BD4",
+  // badge border
+  borderColor: "#859BBA",
+  card: "#27262C",
+  cardBorder: "",
+  dropdown: "",
+  dropdownAlt: "",
+  alwaysWhite: "",
+  // button background color
+  button: "#a28bd4",
+  // menu background color
+  nav: "#100C18",
+  navHover: "#473d5d",
+  // chrome track color
+  thumb: "#a28bd4",
+  // chrome track shadow
+  thumbAlt: "#483f5a",
+  dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
+  gradients: {
+    bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
+    inverseBubblegum: "",
+    cardHeader: "",
+    blue: "",
+    violet: "",
+    violetAlt: "",
+    gold: "",
   },
 };

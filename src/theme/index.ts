@@ -26,10 +26,14 @@ export interface PancakeTheme {
   zIndices: ZIndices;
 }
 
+export { default as light } from "./light";
 export { default as dark } from "./dark";
 export { default as dune } from "./dune";
-export { default as light } from "./light";
+export { default as fuse } from "./fuse";
+export { default as aurora } from "./aurora";
 
 export { lightColors } from "./colors";
 export { darkColors } from "./colors";
 export { duneColors } from "./colors";
+export { fuseColors } from "./colors";
+export { auroraColors } from "./colors";

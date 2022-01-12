@@ -6,7 +6,7 @@ export declare const variants: {
     readonly SUCCESS: "success";
     readonly TEXTDISABLED: "textDisabled";
     readonly TEXTSUBTLE: "textSubtle";
-    readonly BINANCE: "binance";
+    readonly PLATFORM: "platform";
     readonly FAILURE: "failure";
 };
 export declare type Variants = typeof variants[keyof typeof variants];

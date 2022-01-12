@@ -1,4 +1,4 @@
-import { duneColors, darkColors, lightColors } from "../../theme/colors";
+import { auroraColors, fuseColors, duneColors, darkColors, lightColors } from "../../theme/colors";
 import { RadioTheme } from "./types";
 
 export const light: RadioTheme = {
@@ -11,4 +11,12 @@ export const dark: RadioTheme = {
 
 export const dune: RadioTheme = {
   handleBackground: duneColors.card,
+};
+
+export const fuse: RadioTheme = {
+  handleBackground: fuseColors.card,
+};
+
+export const aurora: RadioTheme = {
+  handleBackground: auroraColors.card,
 };
